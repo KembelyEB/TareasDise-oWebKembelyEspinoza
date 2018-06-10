@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Tarea1</title>
+    <link rel="stylesheet" href="css/Tarea1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu">
+</head>
+<body>
+
+    <div class="formulario">
+
+        <ul class="tabs">
+            <li  class="tab"><a id="button1" href="#">Iniciar Sesion</a></li>
+            <li  class="tab"><a id="button2" href="#">Registrarse</a></li>
+        </ul>
+
+        <div class="contenido">
+            <div id="IniciarSesion">
+                <br>
+                <br>
+                <form action="#" method="post">
+                    <div class="input">
+                        <label>
+                            Usuario <span class="req" ></span>
+                        </label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input">
+                    <label>
+                            Contraseña <span class="req" ></span>
+                        </label>
+                        <input type="password" required>
+                    </div>
+                    <p class="forgot"><a href="#"></a>Se te olvido la contraseña</p>
+                    <input type="submit" class="button " value="Iniciar Sesion">
+                </form>
+            </div>
+
+            <div id="Registrarse">
+             <br>
+             <br>
+                <form action="#" method="post">
+                    <div class="arriba">
+                        <div class="input">
+                            <label>
+                                Nombre <span class="req"></span>
+                            </label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input">
+                             <label>
+                                Apellido <span class="req"></span>
+                            </label>
+                            <input type="text" required>
+                         </div>
+                            <div class="input">
+                                    <label>
+                                        Email <span class="req"></span>
+                                    </label>
+                                    <input type="email" required>
+                                </div>
+                                <div class="input">
+                                        <label>
+                                        Contraseña <span class="req"></span>
+                                        </label>
+                                        <input type="password" required>
+                                    </div>
+                                    <div class="input">
+                                            <label>
+                                                Repetir Contraseña <span class="req"></span>
+                                            </label>
+                                            <input type="password" required>
+                                        </div>
+                                        <input type="submit" class="button " value="Registrarse">
+
+                    
+                </form>
+            </div>
+
+        </div>
+    </div>
+    
+   <script> 
+ var IniciarSesion=document.getElementById("IniciarSesion");
+ var Registrarse=document.getElementById("Registrarse");
+ var Button1=document.getElementById("button1");
+ var Button2=document.getElementById("button2");
+
+Button1.addEventListener("click",function(){
+    IniciarSesion.style.display="block";
+    Registrarse.style.display="none"; 
+})
+
+Button2.addEventListener("click",function(){
+    IniciarSesion.style.display="none";
+    Registrarse.style.display="block"; 
+})
+  
+   </script>
+
+
+    
+</body>
+</html>
